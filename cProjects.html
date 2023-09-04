@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="Viewport" content="width=device-width, initial-scal=1.0">
+    <title>C/C++ Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2837a7c13.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="navbar">
+
+        <p id="logo"><a href="index.html">Richard Zhao</a></p>
+        
+
+        <ul class="navbar-menu-desktop">
+            <li class="navbar-item home"><a href="index.html">Home</a></li>
+            <li class="navbar-item about"><a href="index.html">About</a></li>
+            <li class="navbar-item projects"><a href="#">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="pythonProjects.html">Python Projects</a></li>
+                        <li><a href="javaProjects.html">Java Projects</a></li>
+                        <li><a href="cProjects.html">C/C++ Projects</a></li>
+                    </ul>
+            </li>
+
+
+            <li class="navbar-item contact"><a href="contact.html">Contact</a></li>
+        </ul>
+
+
+        <ul class="navbar-menu-mobile">
+            <li class="navbar-item home"><a href="index.html">Home</a></li>
+            <li class="navbar-item about"><a href="index.html">About</a></li>
+            <li class="navbar-item projects"><a href="pythonProjects.html">Python Projects</a>
+            <li class="navbar-item projects"><a href="javaProjects.html">Java Projects</a>
+            <li class="navbar-item projects"><a href="cProjects.html">C/C++ Projects</a>
+            <li class="navbar-item contact"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </div>
+
+
+
+    <div class="main-container">
+
+        <h2 class="about-heading"><span class="heading-sec_main">C/C++ Projects</span></h2>
+
+        <h3 class="about_content-title">What Is C?</h3>
+        <p class="content-para">
+            C is a foundational procedural programming language with a focus on efficiency and control, while C++ is an extension of C that adds object-oriented features, making it versatile for a wide range of applications.
+        </p>
+
+
+        <h3 class="content-title">Tools And FrameWorks I've Used</h3>
+
+
+
+        <div class="project-list">
+            <ul class="content-list">
+                <li><spam class="project_page_skill"><b>Qt</b></spam>- Spring Boot is a popular open-source framework for building Java-based web applications and microservices. It's part of the larger Spring ecosystem, which provides comprehensive tools and libraries for Java developers to create enterprise-grade applications. </li>
+                <li><spam class="project_page_skill"><b>C POSIX Functions</b></spam>- C POSIX functions are a set of standard functions and libraries. These functions are primarily used for system programming and interacting with the underlying operating system in a platform-independent way. Uses involve file/directory manipulation, process manangement, thread management, networking, signal handling, and much more.</li>
+                <li><spam class="project_page_skill"><b>Assembly</b></spam>- A low-level programming language that provides a symbolic representation of a computer's machine code instructions. It serves as an intermediary between machine code (binary instructions) and high-level programming languages like C and C++.</li>
+                <li><spam class="project_page_skill"><b>Bash</b></spam>- A command-line shell and scripting language commonly used on Unix-like operating systems,</li>
+
+            </ul>
+        </div>
+
+
+        <section id="projects" class="projects sec-pad">
+            <h2 class="project-heading"><span class="heading-sec_main">Projects Using C/C++</span></h2>
+
+            <div class="project_content">
+
+                <div class="project_row">
+                    <div class="project_row-content">
+                        <h3 class="project_row-content-title"><span class="skill-sec-skill">C Webserver</span></h3>
+                        <div class="project_skills">
+                            <div class="project_skills_skill">C</div>
+                            <div class="project_skills_skill">C POSIX Functions</div>
+                            <div class="project_skills_skill">Linux</div>
+                            <div class="project_skills_skill">CodeBlock</div>
+                        </div>
+
+                        <p class="project_row-content-desc">
+                            
+                            Collaborated with a team member to create a dynamic C-based web server utilizing POSIX functions and system calls. Orchestrated the integration of multithreading, fostering fluid client-server communication through sockets. Pioneered the inclusion of caching capabilities for previsited documents, subsequently fine-tuning the efficiency of servicing GET requests. 
+                          </p>
+                          <h3 class="github_link">Github Link:</h3>
+                          <a class="link" href="https://github.com/jdegiac/golf-project" target="_blank">https://github.com/jdegiac/golf-project</a>
+                    </div>
+                    <div class="project_row-image">
+                        <img src="./images/c-webserver-img.jpg" class="single-img" class="project_row-img" loading="lazy">
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+    </div>
+
+    <div class="ending">
+        <p>Thank you for visiting my site!</p>
+    </div>
+</body>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+    
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+    
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navbar-menu-mobile");
+        const navItemHome = document.querySelector(".home")
+        const navItemAbout = document.querySelector(".about")
+        const navItemProjects = document.querySelector(".projects")
+        const navItemContact = document.querySelector(".contact")
+    
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            about.classList.toggle("active")
+        } )
+    
+        navItemHome.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        } )
+    
+        navItemAbout.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        } )
+    
+        navItemProjects.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        } )
+    
+        navItemContact.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        } )
+    
+    
+    </script>
+    
+    </html>
